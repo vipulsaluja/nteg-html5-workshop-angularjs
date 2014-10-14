@@ -1,0 +1,10 @@
+.header {
+	margin: 40px 0 20px;
+	text-align:center;
+	border-bottom: 1px solid #eee;
+	padding-bottom:10px;
+}
+
+.content {
+	width: 40%;
+}

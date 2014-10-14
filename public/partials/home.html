@@ -1,0 +1,17 @@
+<div ng-controller="HomeController" class="table-responsive">
+	<table class="table">
+		<thead>
+	 		<tr>
+	  			<th>#</th>
+	  			<th>Title</th>
+	  			<th>Price</th>
+	  		</tr>
+		</thead>
+  		<tr ng-repeat="item in items">
+  			<td>{{$index + 1}}</td>
+  			<td>{{item.title}}</td>
+  			<td><input class="form-control" placeholder="Price" ng-model="item.price" ng-change="calculateTotal()"></td>
+  		</tr>
+	</table>
+	<h1>Total: {{total}}</h1>
+</div>

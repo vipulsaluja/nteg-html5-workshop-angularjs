@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+      <title>Workshop AngularJS</title>
+
+      <!-- CSS files -->
+      <link rel="stylesheet" href="styles/libs/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="styles/app/app.css">
+   </head>
+   
+   <body>
+
+      <div ng-app="demoApp">
+         <!-- header -->
+         <header-item></header-item>
+         
+
+         <!-- content -->
+         <div id="content" class="content">
+            <div ng-view>      
+            </div>
+         </div>        
+
+         <!-- footer -->
+         <div id="footer" ng-include='"partials/footer.html"'></div> 
+      </div>
+
+
+      <script type="text/javascript" src="js/libs/angular/angular.js"></script>
+      <script type="text/javascript" src="js/libs/angular/angular-route.js"></script>
+      <script type="text/javascript" src="js/app/router.js"></script>
+      <script type="text/javascript" src="js/app/home-controller.js"></script>      
+      <script type="text/javascript" src="js/app/service.js"></script>
+      <script type="text/javascript" src="js/app/directive.js"></script>
+      <script type="text/javascript" src="js/app/another-controller.js"></script>
+   </body>
+</html> 
